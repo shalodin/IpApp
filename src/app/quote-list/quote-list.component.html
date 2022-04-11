@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-lg-6 mb-3" *ngFor="let quote of quoteList">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{quote.quoteTitle}}  <span class="float-right"><button class="btn btn-danger btn-sm">See more</button></span></h5>
+                <p class="card-text">{{quote.quote}}</p>
+                <p>Posted by: <span class="text-success bold">{{quote.name}}</span> <span class="float-right"><small>on:{{quote.datePosted}} </small></span></p>
+            </div>
+        </div>
+    </div>
+</div>
